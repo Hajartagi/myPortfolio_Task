@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="assets/scss/index.css">
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>TH</title>
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title> 🍇TH</title>
+    <!-- SwiperJS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
 </head>
 <body>
+
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 HEADER                                   -->
     <!-- ----------------------------------------------------------------------- -->
@@ -24,10 +28,10 @@
                 </div>
                 <nav class="navBar">
                     <ul class="navList">
-                        <li class="navItem "><a class="navLink" href="index.html">Ana səhifə</a></li>
-                        <li class="navItem"><a class="navLink" href="#">Haqqımda</a> </li>
-                        <li class="navItem"><a class="navLink" href="#">Layihələrim </a></li>
-                        <li class="navItem"><a class="navLink" href="#">Əlaqə</a> </li>
+                        <li class="navItem "><a class="navLink" href="#home">Ana səhifə</a></li>
+                        <li class="navItem"><a class="navLink" href="#about">Haqqımda</a> </li>
+                        <li class="navItem"><a class="navLink" href="#project">Layihələrim </a></li>
+                        <li class="navItem"><a class="navLink" href="#contact">Əlaqə</a> </li>
                         <li class="navItem">
                             <button class="cvBtn" id="downloadBtn"><i class="fa-solid fa-download"></i> CV Yüklə</button>
                         </li>
@@ -42,10 +46,10 @@
         </div>
         <nav class="sidebar ">
             <ul class="navList">
-                <li class="navItem "><a class="navLink" href="index.html">Ana səhifə</a></li>
-                <li class="navItem"><a class="navLink" href="#">Haqqımda</a> </li>
-                <li class="navItem"><a class="navLink" href="#">Layihələrim </a></li>
-                <li class="navItem"><a class="navLink" href="#">Əlaqə</a> </li>
+                <li class="navItem "><a class="navLink" href="#home">Ana səhifə</a></li>
+                <li class="navItem"><a class="navLink" href="#about">Haqqımda</a> </li>
+                <li class="navItem"><a class="navLink" href="#project">Layihələrim </a></li>
+                <li class="navItem"><a class="navLink" href="#contact">Əlaqə</a> </li>
                 <li class="navItem">
                     <button class="cvBtn" id="downloadBtn"><i class="fa-solid fa-download"></i> CV Yüklə</button>
                 </li>
@@ -59,34 +63,165 @@
     <!-- ----------------------------------------------------------------------- -->
     <main>
         <section >
-            <div class="hero-section">
+            <div class="hero-section" id="home">
                 <div class="hero-left">
                     <div class="hero-left-text">
-                        <button class="hi-btn animate__animated animate__swing"><a href="index.html">Salam, hamıya! 👋</a></button>
+                        <button class="hi-btn animate__animated "><a href="#">Salam, hamıya! 👋</a></button>
                         <h2>Mən Tağısoy Həcər,
                             Problemləri həll edən və yaradıcı düşünən bir Front-End Developerəm. 
                         </h2>
                     </div>
                     <div class="hero-bottom-btn">
-                        <button class="about-btn hover text"><a href="#">Haqqımda ></a></button>
-                        <button class="contact-btn hover text"><a href="#">Əlaqə</a></button>
+                        <button class="about-btn hover text"><a href="#about">Haqqımda ></a></button>
+                        <button class="contact-btn hover text"><a href="mailto:hajartaghisoy@gmail.com" target="_blank">Əlaqə</a></button>
                     </div>
                 </div>
                 <div class="hero-right">
                     <div class="hero-right-btn">
-                        <button class="tech  hover"><a href="#">🔔 TECH</a></button>
+                        <button class="tech  hover"><a href="#project">🔔 TECH</a></button>
                         <button class="design  hover"><a href="#">🎨 Dizayn</a></button>
                     </div>
                     <div class="hero-right-pic"></div>
                 </div>
             </div>
         </section>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               about mee                               -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-left">
+                <h3>Haqqımda</h3>
+                <p>
+                    Mən Hajar Taghısoy, frontend development sahəsinə maraq göstərən və bu istiqamətdə özünü inkişaf etdirməyə çalışan bir proqramçıyam. 
+                    İlk layihələrimdən biri kimi şəxsi portfolio vebsaytımı hazırlayıram və bu zaman HTML, CSS, SCSS və JavaScript kimi texnologiyalardan istifadə edirəm.<br> <br>
+    
+                    Təhsilimi mühəndislik sahəsində alsam da, həmişə proqramlaşdırmaya xüsusi marağım olub. İnteraktiv və funksional veb interfeyslər yaratmaq məni ən çox həyəcanlandıran mövzulardandır. Xüsusilə JavaScript və onun kitabxanaları üzərində çalışaraq real layihələr üzərində təcrübə qazanmağa çalışıram. <br> <br>
+                    
+                    Özümü inkişaf etdirmək üçün müxtəlif online kurslar, tutoriallar və real layihələr üzərində işləyirəm. Hədəfim peşəkar bir frontend developer kimi mükəmməl UI/UX interfeyslər yaratmaq və istifadəçilərə rahat, modern veb təcrübəsi təqdim etməkdir.
+                </p>
+                <div class="about-pic">
+                    <img src="assets/images/memoji.webp" alt="pic">
+                </div>
+            </div>
+            <div class="about-right">
+                <marquee behavior="scroll" direction="up" scrollamount="12" class="marquee">
+                    <div class="marquee-content">
+                        <img src="assets/icons/html 1.png" alt="HTML">
+                        <img src="assets/icons/css.png" alt="CSS">
+                        <img src="assets/icons/icon-sass.png" alt="SCSS">
+                        <img src="assets/icons/js.png" alt="JavaScript">
+                        <img src="assets/icons/git-tech.png" alt="GitHub">
+                        <img src="assets/icons/Figma-Logo-PNG-File-200x200.png" alt="Figma" width="62px" height="62px">
+                        <img src="assets/icons/postman 600.png" alt="POSTMAN" width="62px" height="62px">
+                    </div>
+                </marquee>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               swiper-project                               -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section class="project-section" id="project">
+        <h3>Layihələrim</h3>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/Glamour -Macbook.png" alt="Project 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/sagar.png" alt="Project 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/Morent-1.png" alt="Project 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/haci dayi.png" alt="Project 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/form.png" alt="Project 5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/register.png" alt="Project 6">
+                </div>
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               contact                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h3>Əlaqə</h3>
+                <p>Əməkdaşlıq etməkdə maraqlısınız? Zəhmət olmasa aşağıdakı formanı doldurun.</p>
+                <form id="contact-form">
+                    <input type="text" id="full-name" placeholder="Tam adınızı qeyd edin">
+                    <input type="email" id="email" placeholder="E-poçt ID-niz">
+                    <input type="text" id="query" placeholder="Sorğu ilə əlaqəli">
+                    <textarea id="message" placeholder="Mesajınız..."></textarea>
+                    <button type="submit" class="contact-btn hover text">Təsdiqlə</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               calendar                               -->
+    <!-- ----------------------------------------------------------------------- -->
+        <section class="calendar-section" id="calendar">
+            <div class="container">
+                <div class="calendar-text">
+                    <p >
+                        Əgər məhsul, portfolio və ya ümumiyyətlə hər hansı bir şey haqqında mənimlə söhbət etmək istəyirsinizsə - 
+                        bu təqvim linkindən istifadə edərək vaxt təyin edin:
+                    </p>
+                </div>
+                <div class="calendar">
+                    <div class="calendar-left">
+                        <img src="assets/images/what.webp" alt="photo">
+                    </div>
+                    <div class="calendar-right">
+                        <img class="arrow" src="assets/images/Arrow 1.png" alt="arrow">
+                        <a class="calendar-url" id="calendar-link" target="_blank">
+                            <img src="assets/images/Calendar-1-54 1.png" alt="təqvim">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- ----------------------------------------------------------------------- -->
+    <!--                               media                               -->
+    <!-- ----------------------------------------------------------------------- -->
+        <section class="contact-media" id="media">
+                <div class="container">
+                    <button class="follow-btn hover">İzləyə bilərsiniz məni 👇</button>
+                    <div class="media-links">
+                        <a  href="https://www.facebook.com/share/p/1HRaPdkc8p/?mibextid=wwXIfr"><img src="assets/icons/FB.png" alt="fb"></a>
+                        <a href="https://www.instagram.com/hajartaghisoyy?igsh=MWphM3FheDBlM2ExYg%3D%3D&utm_source=qr"><img src="assets/icons/Instagram.png" alt="ig"></a>
+                        <a href="https://www.linkedin.com/in/hajar-taghisoy-284589324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="assets/icons/Twitter.png" alt="twitter"></a>
+                        <a href="https://www.linkedin.com/in/hajar-taghisoy-284589324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="assets/icons/LinkedIn.png" alt="linkedin"></a>
+                        <a href="https://www.linkedin.com/in/hajar-taghisoy-284589324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="assets/icons/ball.png" alt="ball"></a>
+                        <a href="https://www.linkedin.com/in/hajar-taghisoy-284589324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="assets/icons/discord.png" alt="discord"></a>
+                        <a href="https://www.linkedin.com/in/hajar-taghisoy-284589324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="assets/icons/github.png" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/hajar-taghisoy-284589324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="assets/icons/youtube.png" alt="yt"></a>
+                    </div>
+                </div>
+            <div class="f-bottom"><p class="footer-c">© <span>2025</span> Made With ❤️ by  <span>Hajar</span></p></div>
+        </section>
     </footer>
 
+        
+    <!-- SwiperJS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JS LINK -->
     <script src="assets/js/index.js"></script>
     <!-- FONT AWSOME -->

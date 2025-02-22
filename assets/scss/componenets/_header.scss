@@ -86,7 +86,7 @@ header{
 }
 
 // Mobile Style
-@media (max-width: 774px) {
+@media (max-width: 796px) {
     header {
         position: sticky;
         z-index: 999;
@@ -164,14 +164,14 @@ header{
                         width: 100%;
                     }
                     }
-                     .cvBtn{
+                    .cvBtn{
                         color: white;
                         font-size: 18px;
                         font-weight: bold;
                         padding: 10px 17px;
                         border: transparent;
                         border-radius: 4px;
-                        background-color: $dark-orange;
+                        background-color:rgb(52, 29, 1); ;
                         transition: 0.4s all ease;
                         cursor: pointer;
                         &:hover{
@@ -185,8 +185,188 @@ header{
         
         .mobile-active{
             transform: translateY(0px);
+        }
+    }
+}
+@media (max-width: 550px) {
+    header {
+        position: sticky;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        .headerSection {
+            // width: 80%;
+            // margin: 0 auto;
+            position: relative;
+            z-index: 99;
+            height: 100px;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            gap: 300px;
+            .hamburger {
+                display: block;
+                &.active {
+                    .bar {
+                        &:nth-child(2) {
+                            opacity: 0;
+                        }
 
-           
+                        &:nth-child(1) {
+                            transform: rotate(45deg) translateY(12px);
+                        }
+
+                        &:nth-child(3) {
+                            transform: rotate(-45deg) translateY(-11px);
+                        }
+                    }
+                }
+            }
+            .navBar {
+                display: none;                   
+            } 
+            
+        }
+        .sidebar{
+            position: absolute;
+            width: 100%;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+            transform: translateY(-500px);
+            >.navList{
+                background-color: white;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                >li{
+                    border-bottom:1px solid  rgb(89, 50, 3);
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 10px;
+                    position: relative;
+
+                    >a{
+                        text-align: center;
+                        width: 100%;
+                        font-weight: 600;
+                        color: rgb(89, 50, 3);
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            width: 0%;
+                            height: 2px;
+                            left: 0;
+                            bottom: 0px;
+                            background-color:rgb(52, 29, 1); ;
+                            transition: 0.6s ease;
+                        }
+                        
+                    &:hover::after{
+                        width: 100%;
+                    }
+                    }
+                    .cvBtn{
+                        color: white;
+                        font-size: 18px;
+                        font-weight: bold;
+                        padding: 10px 17px;
+                        border: transparent;
+                        border-radius: 4px;
+                        background-color: $dark-orange;
+                        transition: 0.4s all ease;
+                        cursor: pointer;
+                        &:hover{
+                            background: linear-gradient(0deg, rgba(250,250,250,1) 0%, rgb(126, 239, 19) 100%);
+                        }
+                    }
+                }
+            }
+        }
+        
+        .mobile-active{
+            transform: translateY(0px);
+        }
+    }
+}
+@media (max-width: 430px) {
+    header {
+        position: sticky;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        .headerSection {
+            // width: 80%;
+            // margin: 0 auto;
+            position: relative;
+            z-index: 99;
+            height: 100px;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            gap: 250px;}}
+}
+@media (max-width: 375px) {
+    header {
+        position: sticky;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        height: 100px;
+
+        .headerSection {
+            position: relative;
+            z-index: 99;
+            height: 70px;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            gap: 200px;
+            .logo{
+                a{
+                    display: flex;
+                    font-size: 26px;
+                    color: $head;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }}
+                .hamburger{
+                        display: block;
+                        &.active {
+                            .bar {
+                                &:nth-child(2) {
+                                    opacity: 0;
+                                }
+        
+                                &:nth-child(1) {
+                                    transform: rotate(45deg) translateY(10px);
+                                }
+        
+                                &:nth-child(3) {
+                                    transform: rotate(-45deg) translateY(-11px);
+                                }
+                            }
+                        }
+                    
+                    .bar{
+                        display: block;
+                        width: 20px;
+                        height: 2px;
+                        margin: 5px auto;
+                        transition: 0.3s all ease;
+                        background-color: #000000;
+                    }
+                }
+        }
+        .sidebar{
+            position: absolute;
+            width: 100%;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+            transform: translateY(-300px);
         }
     }
 }

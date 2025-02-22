@@ -1,0 +1,250 @@
+.about-section {
+    background: linear-gradient(0deg, rgba(250,250,250,1) 0%, rgba(250,250,250,1) 100%);
+    padding: 74px 0px;
+    .container {
+        display: flex;
+        align-items: stretch; 
+        .about-left {
+            width: 75%;
+            color: $primary-text;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3 {
+                font-size: 80px;
+                font-weight: bolder;
+                margin-bottom: 31px;
+            }
+
+            p {
+                font-size: 25px;
+                font-weight: 400;
+            }
+
+            .about-pic {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .about-right {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            marquee {
+                height: 100%;
+                overflow: hidden; 
+                display: block; 
+
+                .marquee-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px; 
+                    align-items: center;
+                }
+
+                img {
+                    width: 80px;
+                    height: auto;
+                    transition: transform 0.3s ease, filter 0.3s ease;
+                    &:hover {
+                        transform: scale(1.2); // 20% böyüyür
+                        filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8)); // Parlaqlıq effekti
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:930px){
+    .about-section {
+        background: linear-gradient(0deg, rgba(250,250,250,1) 0%, rgba(250,250,250,1) 100%);
+        padding: 74px 0px;
+        .container {
+            display: flex;
+            align-items: stretch; 
+            .about-left {
+                width: 75%;
+                color: $primary-text;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3 {
+                    font-size: 60px;
+                    font-weight: bolder;
+                    margin-bottom: 31px;
+                }
+                p {
+                    font-size: 22px;
+                    font-weight: 400;
+                    margin-bottom: -20px;
+
+                }
+                .about-pic {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }}}}
+}
+@media (max-width:730px){
+    .about-section {
+        background: linear-gradient(0deg, rgba(250,250,250,1) 0%, rgba(250,250,250,1) 100%);
+        padding: 74px 0px;
+        .container {
+            display: flex;
+            align-items: stretch; 
+            .about-left {
+                width: 75%;
+                color: $primary-text;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3 {
+                    font-size: 50px;
+                    font-weight: bolder;
+                    margin-bottom: 31px;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: -20px;
+                }
+                .about-pic {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }}
+                .about-right {
+                    marquee {
+                        .marquee-content {
+                            gap: 40px; 
+                            align-items: center;
+                        }
+                        img {
+                            width: 60px;
+                            height: auto;
+                            transition: transform 0.3s ease, filter 0.3s ease;
+                            &:hover {
+                                transform: scale(1.2); // 20% böyüyür
+                                filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8)); // Parlaqlıq effekti
+                            }
+                        }
+                    }
+                }
+            }
+                
+            }
+}
+@media (max-width:550px){
+    .about-section {
+        background: linear-gradient(0deg, rgba(250,250,250,1) 0%, rgba(250,250,250,1) 100%);
+        padding: 50px 0px;
+        .container {
+            display: flex;
+            align-items: stretch; 
+            .about-left {
+                width: 75%;
+                color: $primary-text;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3 {
+                    font-size: 35px;
+                    font-weight: bolder;
+                    margin-bottom: 21px;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: -20px;
+                }
+                .about-pic {
+                    width: 100%;
+                    img{
+                        width: 150px;
+                    }
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }}
+                .about-right {
+                    marquee {
+                        .marquee-content {
+                            gap: 30px; 
+                            align-items: center;
+                        }
+                        img {
+                            width: 50px;
+                            height: auto;
+                            transition: transform 0.3s ease, filter 0.3s ease;
+                            &:hover {
+                                transform: scale(1.2); // 20% böyüyür
+                                filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8)); // Parlaqlıq effekti
+                            }
+                        }
+                    }
+                }
+            }
+                
+            }
+}
+@media (max-width:350px){
+    .about-section {
+        background: linear-gradient(0deg, rgba(250,250,250,1) 0%, rgba(250,250,250,1) 100%);
+        padding: 30px 0px;
+        .container {
+            display: flex;
+            align-items: stretch; 
+            .about-left {
+                width: 85%;
+                color: $primary-text;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3 {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 9px;
+                    font-weight: 400;
+                    margin-bottom: -20px;
+                }
+                .about-pic {
+                    width: 100%;
+                    img{
+                        width: 100px;
+                    }
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }}
+                .about-right {
+                    width: 15%;
+                    marquee {
+                        .marquee-content {
+                            gap: 15px; 
+                            align-items: center;
+                        }
+                        img {
+                            width: 30px;
+                            height: auto;
+                            transition: transform 0.3s ease, filter 0.3s ease;
+                            &:hover {
+                                transform: scale(1.2); // 20% böyüyür
+                                filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8)); // Parlaqlıq effekti
+                            }
+                        }
+                    }
+                }
+            }
+                
+            }
+}
